@@ -1,13 +1,19 @@
 <script setup lang="ts">
-
+const {data} = useFetch("/api/ninja?name=SUPERSS", {
+  method: "post",
+  body: {
+    age: 20
+  }
+})
 </script>
 
 <template>
   <div>
     <h1 class="font-bold">About</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam illum incidunt ipsa nostrum officia pariatur
-      provident quis saepe sed ut.
-    </p>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci dolorum et modi mollitia ratione saepe
+      sapiente, ut vel voluptas.
+    </div>
   </div>
 </template>
 
