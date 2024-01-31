@@ -4,17 +4,17 @@
 
 <template>
   <div>
-    <header>
-      <nav>
-        <NuxtLink to="/">Nuxt Dojo</NuxtLink>
+    <header class="shadow-sm mx-auto bg-white">
+      <nav class="container p-4 mx-auto">
+        <NuxtLink to="/products" class="font-bold">Nuxt Dojo Merch</NuxtLink>
       </nav>
     </header>
 
-    <div>
-      <slot></slot>
+    <div class="container p-4 mx-auto">
+      <slot/>
     </div>
-    <footer>
-      <ul>
+    <footer class="container mx-auto p-4 border-t-2">
+      <ul class="flex gap-4">
         <li>
           <NuxtLink to="/">Home</NuxtLink>
         </li>
